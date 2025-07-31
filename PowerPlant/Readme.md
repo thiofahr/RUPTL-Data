@@ -1,7 +1,8 @@
 ```mermaid 
 flowchart TD
 
-    A[RUPTL Data] -->|Extract| B[(Generator Data)]
+    A[Start] -->B(Extract Data)
+    B --> C[(Generator Data)]
 ```
 ```mermaid 
 classDiagram
