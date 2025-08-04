@@ -3,6 +3,9 @@ flowchart TD
 
     A[Start] -->B(Extract Data)
     B --> C[(Generator Data)]
+    C --> D(Check availability in Generator List)
+    D --> E(Add finansial and technical data)
+    E --> F[END]
 ```
 ```mermaid 
 classDiagram
