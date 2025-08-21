@@ -30,7 +30,9 @@ flowchart TD
         )
         S3 --> S6(Create Property Data)
         S4 --> S6
-        S5 --> S6 
+        S5 --> S6
+        S6 --> S7(Duplicate Max Units Built data)
+        S7 --> S8(Add Scenario data: Ex H2/Ex H2 Opt and Ex CCS/Ex CCS Opt)
     end    
     subgraph Objects 
         direction RL  
@@ -50,7 +52,7 @@ flowchart TD
         M5 --> M9(Create Memberships Data)
         M8 --> M9
     end 
-    S6 --> S(Update Plexos Data)
+    S8 --> S(Update Plexos Data)
     O2 --> S
     M9 --> S
 ```
